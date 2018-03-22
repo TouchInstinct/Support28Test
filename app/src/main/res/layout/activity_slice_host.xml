@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/slice_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/get_slice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/get_slice"/>
+
+        <androidx.slice.widget.SliceView
+            android:id="@+id/slice_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/get_slice"/>
+
+        <android.support.constraint.Group
+            android:id="@+id/group_need_permission"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:visibility="invisible"
+            app:constraint_referenced_ids="button_grant_permission,label_permission"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/get_slice"/>
+
+        <TextView
+            android:id="@+id/label_permission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/explanation_auth"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintEnd_toEndOf="@+id/group_need_permission"
+            app:layout_constraintStart_toStartOf="@+id/group_need_permission"
+            app:layout_constraintTop_toTopOf="@+id/group_need_permission"/>
+
+        <Button
+            android:id="@+id/button_grant_permission"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/grant_permission"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/label_permission"
+            app:layout_constraintTop_toBottomOf="@+id/label_permission"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

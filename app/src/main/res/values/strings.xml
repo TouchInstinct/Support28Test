@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Балуемся с новым саппортом</string>
+
+    <string name="action_mode_delete">Delete</string>
+    <string name="action_mode_clear">Clear</string>
+    <string name="action_mode_apply">Apply</string>
+
+    <string name="explanation_auth">In order to display slices from SliceProvider, you need to grant Slice&amp;Dice the permission to do so.</string>
+    <string name="grant_permission">Grant permission</string>
+    <string name="change_alignment">Change alignment</string>
+    <string name="input_chip_text">Input chip text</string>
+    <string name="add_chip">Add chip</string>
+    <string name="open_selection">Recycler view selection</string>
+    <string name="slices">Slices</string>
+    <string name="open_material">MaterialButton and MaterialCardView</string>
+    <string name="open_chip">Chip and ChipGroup</string>
+    <string name="open_bottom">BottomAppToolbar</string>
+    <string name="materialcardview">MaterialCardView</string>
+    <string name="cardview">CardView</string>
+    <string name="vs">vs</string>
+    <string name="mcardview">MCardView</string>
+    <string name="materialbutton">MaterialButton</string>
+    <string name="some_text">Some text</string>
+    <string name="appcombatbutton">AppCombatButton</string>
+    <string name="get_slice">Запросить Slice</string>
+    <string name="menu_another_mode">Turn on another mode</string>
+</resources>

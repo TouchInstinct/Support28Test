@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/open_recycler_view_selection"
+        android:layout_width="match_parent"
+        android:text="@string/open_selection"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/open_slice"
+        android:layout_width="match_parent"
+        android:text="@string/slices"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/open_material_elements"
+        android:layout_width="match_parent"
+        android:text="@string/open_material"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/open_chip"
+        android:layout_width="match_parent"
+        android:text="@string/open_chip"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/open_bottom_app_navigation"
+        android:layout_width="match_parent"
+        android:text="@string/open_bottom"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
